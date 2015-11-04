@@ -46,7 +46,7 @@ class ReplyToTweet(StreamListener):
 
             #check if repsonse is over 140 char
             if len(replyText) > 140:
-                replyText = replyText[0:137] + '...'
+                replyText = replyText[0:139] + '…'
 
             print('Tweet ID: ' + tweetId)
             print('From: ' + screenName)
