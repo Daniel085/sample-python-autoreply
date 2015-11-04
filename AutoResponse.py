@@ -46,7 +46,7 @@ class ReplyToTweet(StreamListener):
 
             #check if repsonse is over 140 char
             if len(replyText) > 140:
-                replyText = replyText[0:137] + '...'
+                replyText = replyText[0:139] + '…'
 
             print('Tweet ID: ' + tweetId)
             print('From: ' + screenName)
@@ -54,7 +54,7 @@ class ReplyToTweet(StreamListener):
             print('Reply Text: ' + replyText)
 
             # If rate limited, the status posts should be queued up and sent on an interval
-            twitterApi.update_status(replyText, tweetId)
+            twitterApi.update_status(status=replyText, in_reply_to_status_id=tweetId)
 
     def on_error(self, status):
         print status
