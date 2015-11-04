@@ -45,9 +45,10 @@ python AutoResponse.py
 
 Notes
 -----
+Currently this code is not fully Python 3.x-compatible and may need some work, but should work fine on Python 2.7
+
 This is a very barebones code example to get you started. There are additional considerations you should account for in your application. Please familiarize yourself with the following to help you create the best experience for yourself and your users.
 
 [The Twitter Rules](https://support.twitter.com/articles/18311-the-twitter-rules)<br/>
 [Automation Rules & Best Practices](https://support.twitter.com/articles/76915)<br/>
-[API Rate Limiting](https://dev.twitter.com/docs/rate-limiting/1.1)
-
+[API Rate Limiting](https://dev.twitter.com/rest/public/rate-limits)
